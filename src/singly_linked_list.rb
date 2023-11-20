@@ -56,10 +56,6 @@ class SinglyLinkedList
     counter
   end
 
-  def bubble_sort_linked_list
-    current_node = @head
-  end
-
   def pretty_print
     return [] if @head.nil?
 
