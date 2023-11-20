@@ -72,6 +72,22 @@ class DoublyLinkedList
     counter
   end
 
+  def sort_linked_list
+    current_node = @head
+    next_node = current_node&.next_node
+
+    return pretty_print if @head || next_node.nil?
+
+    while current_node.value > next_node.value do
+
+
+      current_node = current_node.next_node
+      next_node = next_node.next_node
+
+      break if next_node.nil?
+    end
+  end
+
   def reverse_print_itens
     return [] if @head.nil?
 

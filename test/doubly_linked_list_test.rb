@@ -45,4 +45,33 @@ class TestDoublyLinkedList < Minitest::Test
 
     assert_equal doubly_linked_list.size, [5, 4, 2]
   end
+
+
+  def test_sort_empty_list
+    doubly_linked_list = DoublyLinkedList.new
+
+    assert_equal doubly_linked_list.sort_linked_list, []
+  end
+
+  def test_sort_one_item_list
+    values = [1]
+    doubly_linked_list = DoublyLinkedList.new
+
+    values.each do |value|
+      doubly_linked_list.push(value)
+    end
+
+    assert_equal doubly_linked_list.sort_linked_list, values.sort
+  end
+
+  def test_sort_more_than_one_item_list
+    values = [2, 6, 4, 5]
+    doubly_linked_list = DoublyLinkedList.new
+
+    values.each do |value|
+      doubly_linked_list.push(value)
+    end
+
+    assert_equal doubly_linked_list.sort_linked_list, values.sort
+  end
 end
