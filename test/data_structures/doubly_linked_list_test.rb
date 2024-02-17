@@ -1,5 +1,14 @@
-require "./src/doubly_linked_list"
 require "minitest/autorun"
+require "./src/data_structures/doubly_linked_list"
+
+# Exercise: Doubly Linked List
+# Your task is to implement a Doubly Linked List class in Ruby with the following operations:
+# - Insertion of a new element at the end of the list.
+# - Removal of the last element from the list.
+# - Addition of a new element at the beginning of the list.
+# - Retrieval of the total number of elements currently in the list.
+# - Printing the list in a human-readable format (e.g., [1, 2, 3]).
+# - Printing the list in reverse order.
 
 class TestDoublyLinkedList < Minitest::Test
   def test_push_itens

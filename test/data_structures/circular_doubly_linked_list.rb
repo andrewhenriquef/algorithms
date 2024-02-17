@@ -1,6 +1,12 @@
-
-require "./src/circular_doubly_linked_list"
 require "minitest/autorun"
+require "./src/data_structures/circular_doubly_linked_list"
+
+# Exercise: Circular Doubly Linked List
+# Description: Your task is to implement a Circular Doubly Linked List class in Ruby with the following operations:
+# - Insertion of a new element at the end of the list.
+# - Removal of the last element from the list.
+# - Retrieval of the total number of elements currently in the list.
+# - Printing the list in a human-readable format (e.g., [1, 2, 3]).
 
 class TestCircularDoublyLinkedList < Minitest::Test
   def test_push_itens

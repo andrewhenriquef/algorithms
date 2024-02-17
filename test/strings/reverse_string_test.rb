@@ -1,7 +1,5 @@
-
-require "./src/strings/reverse_string"
 require "minitest/autorun"
-
+require "./src/strings/reverse_string"
 
 # Exercise: Reversing a String
 # Description: Write a Ruby method that takes a string as an input and returns the reversed version of the string.

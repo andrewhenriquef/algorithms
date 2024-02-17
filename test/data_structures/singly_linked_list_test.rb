@@ -1,5 +1,14 @@
-require "./src/singly_linked_list"
 require "minitest/autorun"
+require "./src/data_structures/singly_linked_list"
+
+# Exercise: Singly Linked List
+# Description: Your task is to build a dynamic data structure in Ruby that allows for efficient insertion and deletion
+# of elements. The structure should maintain an ordered collection of elements and support the following operations:
+# - Insertion of a new element at the end of the collection.
+# - Removal of the last element from the collection.
+# - Retrieval of the total number of elements currently in the collection.
+# In addition to the core functionality, your implementation should include a method to print the contents of the list
+# in a human-readable format (e.g., [1, 2, 3]).
 
 class TestSinglyLinkedList < Minitest::Test
   def test_push_itens
