@@ -1,7 +1,7 @@
 require 'minitest/autorun'
-require "./src/calculations/rearrange_numbers"
+require "./src/calculations/next_bigger_number"
 
-# Description:
+# Description: Next Bigger Number with the Same Digits
 # Create a function that takes a positive integer and returns the next bigger number
 # that can be formed by rearranging its digits. For example:
 #
