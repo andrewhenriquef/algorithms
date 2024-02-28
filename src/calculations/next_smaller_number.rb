@@ -2,7 +2,6 @@ CANT_BE_REARRANGED = -1
 
 def next_smaller(number)
   extracted_digits = number.digits
-  amount_of_digits = extracted_digits.size
 
   digits_permutation = extracted_digits.permutation.map(&:join)
   possible_combinations = digits_permutation.map(&:to_i)
