@@ -23,6 +23,9 @@ require "./src/strings/extract_domain_from_url"
 # Input: "https://www.youtube.com"
 # Output: "youtube"
 
+# Input: "icann.org"
+# Output: "icann"
+
 class ExtractDomainFromUrlTest < Minitest::Test
   def test_domain_name
     assert_equal "google", domain_name("http://google.com")
@@ -30,5 +33,6 @@ class ExtractDomainFromUrlTest < Minitest::Test
     assert_equal "xakep", domain_name("www.xakep.ru")
     assert_equal "youtube", domain_name("https://youtube.com")
     assert_equal "youtube", domain_name("https://www.youtube.com")
+    assert_equal "icann", domain_name("icann.org")
   end
 end
