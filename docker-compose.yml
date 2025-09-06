@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  algorithms:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ruby -I. -e "Dir.glob('test/**/*_test.rb').each { |f| require f }"
