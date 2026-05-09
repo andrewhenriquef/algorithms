@@ -6,6 +6,10 @@ require "./src/reccursion/flatten_array"
 # a single flat array containing all values regardless of nesting depth.
 # You cannot use Ruby's built-in Array#flatten method.
 # For each element, ask: is it an array? If yes, recurse into it. If no, collect it.
+#
+# Time Complexity: O(n^2) worst case — every element is visited once, but the accumulator + flatten_array(element)
+# rebuilds the accumulator array on each iteration, copying elements repeatedly.
+# Space Complexity: O(n) — the final result holds n values plus the call stack depth equals nesting depth.
 
 # Inputs and Expected Outputs:
 # Input: [[], 1, [2]]

@@ -6,6 +6,9 @@ require "./src/reccursion/factorial"
 # The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
 # Written mathematically: n! = n * (n-1) * (n-2) * ... * 1
 # with the base case: 0! = 1, 1! = 1
+#
+# Time Complexity: O(n) — each call reduces n by 1, making exactly n recursive calls.
+# Space Complexity: O(n) — n frames held in the call stack simultaneously.
 
 # Inputs and Expected Outputs:
 # Input: 1

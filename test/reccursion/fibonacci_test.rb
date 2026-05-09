@@ -9,6 +9,9 @@ require "./src/reccursion/fibonacci"
 # F(n) = F(n-1) + F(n-2)
 # with initial conditions:
 # F(0) = 0, F(1) = 1
+#
+# Time Complexity: O(2^n) — each call branches into 2 more calls, creating an exponential tree of calls.
+# Space Complexity: O(n) — the call stack only holds one branch at a time, never exceeding depth n.
 
 # Inputs and Expected Outputs:
 # Input: 0
